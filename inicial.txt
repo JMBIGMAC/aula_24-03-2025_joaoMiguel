@@ -1,1 +1,10 @@
-si
+lista/controle de gastos
+
+page:
+    home:
+        lista gastos
+        opçoes:
+            adicionar gastos
+            voltar
+    404:
+        todo caminho url que não for home
