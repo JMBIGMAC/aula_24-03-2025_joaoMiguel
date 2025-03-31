@@ -1,17 +1,15 @@
-import './App.css'
-import { useState, useEffect } from "react";
-import axios from "axios";
-
-const API_URL = "http://localhost:8000/api/expenses/";
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 const App = () => {
-  const [expenses, setExpenses] = useState([]);
-
-  useEffect(() => {
-    axios.get(API_URL).then((response) => setExpenses(response.data));
-  }, []);
-
-  return <div>{/* Componentes aqui */}</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
 };
 
 export default App;

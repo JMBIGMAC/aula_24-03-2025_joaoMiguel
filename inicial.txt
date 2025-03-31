@@ -1,5 +1,5 @@
 lista/controle de gastos
-
+django(backend) + react/vite(dashboard-gastos)
 page:
     home:
         lista gastos
@@ -8,3 +8,5 @@ page:
             voltar
     404:
         todo caminho url que não for home
+------
+
